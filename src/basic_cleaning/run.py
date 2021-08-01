@@ -26,7 +26,7 @@ def go(args):
 
     indices = df['price'].between(args.min_price, args.max_price)
     df = df[indices].copy()
-    indices = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)  
+    indices = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.50, 41.20)  
     df = df[indices].copy()
     logger.info("Outliers removed")
 
